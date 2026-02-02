@@ -1,0 +1,47 @@
+/* color.css */
+
+/* 讓整個方框在畫面正中央 */
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;     /* 背景淡灰，可改或刪掉 */
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  
+}
+
+/* 方框樣式 */
+.square{
+  width: 400px;            /* 方框寬度，可自行調整 */
+  border: 2px solid #000;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;        /* 方框底色 */
+  border-radius: 10px;     /* 圓角，可改或刪掉 */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* 陰影，可改或刪掉 */
+}
+
+/* 標題 */
+.square h1{
+  margin: 0 0 14px 0;
+  text-align: center;      /* 標題置中 */
+  font-size: 36px;      /* 標題字體大小 */
+  letter-spacing: 5px;
+}
+
+/* 內文 */
+.square p{
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;        /* 內文靠左 */
+  white-space: pre;        /* 保留你打的全形空白 */
+}
+
+/* 讓 Email 自動換行，不會撐爆方框 */
+.square p:last-child{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
